@@ -1,508 +1,503 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none; 
-    text-decoration: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.icon_portfolio {
+  width: 4em;
+  margin: 1.5em 0 0 5em;
+}
+
+.button_header {
+  cursor: pointer;
+  float: right;
+  margin: 1.7em;
+  padding: 0.6em;
+  background-color: #fff;
+  border: solid 2px #6e07f3;
+  border-radius: 12px;
+  font-size: 20px;
+  color: #6e07f3;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: all .7s;
+}
+
+.button_header:hover {
+  color: #a36ceb;
+  border: solid 2px #8945e2;
+  opacity: 0.9;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.myContent_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 6em;
+  text-align: center;
+}
+
+.h1_myContent {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3em;
+  margin-bottom: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+.h2_myContent {
+  font-weight: 100;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.myAvatar {
+  width: 14em;
+  margin: 4em auto;
+}
+
+.imgPc_container {
+  display: flex;
+  justify-content: center;
+}
+
+.img_pc {
+  margin: 2em;
+  width: 60em;
+}
+
+.description_container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -32px;
+  text-align: center;
+  background-color: #6e07f3;
+  color: #fff;
+}
+
+.h1_description {
+  margin-top: 4.5em;
+  margin-bottom: 1em;
+}
+
+.p_description {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 40%;
+  margin: auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 14em;
+  text-align: center;
+}
+
+.experience_container {
+  border-radius: 20px;
+  border: solid 1px #ccc;
+  position: relative;
+  background-color: #fff;
+  top: -10em;
+  width: 94vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.experience_content {
+  padding: 2em;
+  border-right: solid 1px #ccc;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.logo_front {
+  width: 4em;
+  margin: auto;
+  margin-bottom: 15px;
+  background-color: #5be9b9;
+  border-radius: 20%;
+  padding: 0.5em;
+ 
+}
+
+.logo_back {
+  width: 4em;
+  margin: auto;
+  margin-bottom: 15px;
+  background-color: #5be9b9;
+  border-radius: 20%;
+  padding: 0.5em;
+}
+
+.h1_experience {
+  margin-bottom: 0.8em;
 }
 
 
-
-.container{
- position: relative;
- display: flex;
- flex-direction: column;
- justify-content: center;
- overflow-x: hidden;
-
-} 
-
-.icon_portfolio{
-    width: 4em;
-    margin: 1.5em 0 0 5em;
+.p_experience_2 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  color: #6e07f3;
 }
 
-.button_header{
-    cursor: pointer;
-    float: right;
-    margin: 1.7em;
-    padding: 0.5em;
-    background-color: #fff;
-    border: solid 2px #6e07f3 ;
-    border-radius: 12px;
-    font-size: 20px;
-    color: #6e07f3;
-    
+.li_experience {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0.8em;
+  font-size: 1.2em;
 }
 
-.button_header:hover{
-    color: #a36ceb;
-    border: solid 2px #8945e2;
-    opacity: .9;
-
+.icono_experience {
+  width: 1.4em;
+  position: relative;
+  top: 8px;
 }
-
-.myContent_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 6em;
-    text-align: center;
+.icono_experience_bootstrap {
+  width: 1.6em;
+  position: relative;
+  top: 6px;
 }
-
-.h1_myContent{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3em;
-    margin-bottom: 0.8em;
-    letter-spacing: 0.1em;
-}
-
-.h2_myContent{
-    font-weight: 100;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.myAvatar{
-    width: 14em;
-    margin: 4em auto ;
-    
-}
-
-.imgPc_container{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.img_pc{
-    margin: 2em ;
-    width: 60em;
-}
-
-.description_container{
-    display: flex;
-    flex-direction: column;
+.icono_experience_sass {
+    width: 1.5em;
     position: relative;
-    top: -32px;
-    text-align: center;
-    background-color: #6e07f3 ;
-    color: #fff;
+    top: 9px;
+  }
+.icono_experience_javascript {
+  width: 2.7em;
+  position: relative;
+  top: 8px;
+  left: -13px;
+}
+.icono_experience_react {
+  width: 1.5em;
+  position: relative;
+  top: 6px;
+}
+.icono_experience_express {
+  width: 1.6em;
+  position: relative;
+  top: 7px;
+}
+.icono_experience_sql {
+  width: 1.6em;
+  position: relative;
+  top: 10px;
+}
+.icono_experience_php {
+    width: 1.5em;
+    position: relative;
+    top: 9px;
+  }
+.icono_experience_mySql {
+  width: 1.6em;
+  position: relative;
+  top: 10px;
 }
 
-.h1_description{
-    margin-top: 4.5em;
-    margin-bottom: 1em;
-    
+.pre-section_proyects {
+  display: flex;
+  position: relative;
+  top: -40px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #6e07f3;
 }
 
-.p_description{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 40%;
-    margin: auto;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 16em;
-    text-align: center;
+.h1_proyects {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  margin-top: 3em;
+  color: #fff;
 }
 
-.experience_container{
+.h3_proyects {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 1.8em;
+  color: #fff;
+  margin-bottom: 10em;
+}
+
+.container_proyects {
+  display: flex;
+  text-align: center;
+}
+
+.proyect a img {
+  position: relative;
+  top: -9em;
+  width: 90%;
+  border-radius: 20px;
+  transition: all .7s;
+}
+
+.proyect a img:hover{
+    transform: scale(1.1);
+}
+
+.top {
+  width: 40px;
+  margin-bottom: 3.5em;
+  background-color: #6e07f3;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.top:hover {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+  opacity: 0.9;
+}
+
+.top_div {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #6e07f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2_footer {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.img_footer {
+  margin: 1em;
+  width: 4em;
+  filter: invert();
+}
+
+.p_copy {
+  font-family: cursive;
+  color: #fff;
+  margin-bottom: 0.6em;
+}
+
+.img_footer:hover {
+  transition: filter 0.2s;
+  filter: invert(0%);
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+  .img_pc {
+    display: none;
+  }
+
+  .experience_container {
     border-radius: 20px;
     border: solid 1px #ccc;
     position: relative;
     background-color: #fff;
-    top:-10em ;
+    top: -10em;
     width: 94vw;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+  }
 
-.experience_content{
-  padding: 2em;
-   border-right: solid 1px #ccc;
-}
+  .experience_content {
+    padding: 2em;
+    border-bottom: solid 1px #ccc;
+    border-right: none;
+  }
 
-
-.logo_front{
-    width: 4em;
-    margin-top: 3.5em;
-    margin-bottom: 1.2em;
-    background-color: #5be9b9;
-    border-radius: 20%;
-    padding: 0.5em;
-}
-
-.logo_back{
-    width: 4em;
-    margin-top: 1em;
-    margin-bottom: 1.2em;
-    background-color: #5be9b9;
-    border-radius: 20%;
-    padding: 0.5em;
-}
-
-.h1_experience{
-   margin-bottom: 0.8em;
-}
-
-.p_experience_1{
-    margin-bottom: 2em;
-    font-size: 1.3em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.p_experience_2{
-font-size: 1.5em;
-margin-bottom: 1.3em;
-color:#6e07f3 ;
-}
-
-.li_experience{
-font-family: 'Courier New', Courier, monospace;
-margin: 0.8em;
-font-size: 1.2em;
-}
-
-.icono_experience{
-width: 1.4em;
-position: relative;
-top: 8px;
-}
-
-.icono_experience_bootstrap{
-    width: 1.6em;
-    position: relative;
-    top: 6px;
-
-}
-.icono_experience_javascript{
-    width: 2.7em;
-    position: relative;
-    top: 8px;
-    left: -13px;
-
-}
-.icono_experience_react{
-    width: 1.5em;
-    position: relative;
-    top: 6px;
-
-}
-.icono_experience_express{
-    width: 1.6em;
-    position: relative;
-    top: 7px;
-
-}
-.icono_experience_sql{
-    width: 1.6em;
-    position: relative;
-    top: 10px;
-
-}
-.icono_experience_mySql{
-    width: 1.6em;
-    position: relative;
-    top: 10px;
-
-}
-
-.pre-section_proyects{
-    display: flex;
-    position: relative;
-    top: -40px;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #6e07f3;
-}
-
-.h1_proyects{
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    margin-top: 3em;
-    color: #fff;
-
-}
-
-.h3_proyects{
-    text-align: center;
-    width: 50%;
+  .p_description {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     margin: auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 1.8em;
-    color: #fff;
-    margin-bottom: 10em;
-}
+    width: 80%;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 16em;
+  }
 
-.container_proyects{
+  .container_proyects {
     display: flex;
+    flex-direction: column;
     text-align: center;
-}
+  }
 
-
-
-.proyect a img{
+  .proyect a img {
     position: relative;
     top: -9em;
     width: 90%;
     border-radius: 20px;
+    margin-bottom: 1.5em;
+  }
 }
 
+@media (min-width: 480px) and (max-width: 576px) {
+  .img_pc {
+    display: none;
+  }
 
-
-.top{
-    width: 40px;
-    margin-bottom: 3.5em;
-    background-color: #6e07f3;
-    border-radius: 50px;
-    padding: 10px;
-}
-
-.top:hover{
-    transform: rotate(180deg);
-    transition: transform .5s;
-    opacity: .9;
-}
-
-.top_div{
-    display: flex;
-    justify-content: center;
-}
-
-
-
-.footer{
-    background-color: #6e07f3;
+  .experience_container {
+    border-radius: 20px;
+    border: solid 1px #ccc;
+    position: relative;
+    background-color: #fff;
+    top: -10em;
+    width: 94vw;
+    margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.h2_footer{
     text-align: center;
-    margin-top: 3em;
+  }
+
+  .experience_content {
+    padding: 2em;
+    border-bottom: solid 1px #ccc;
+    border-right: none;
+  }
+
+  .p_description {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    margin: auto;
+    width: 80%;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 16em;
+  }
+
+  .container_proyects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .proyect a img {
+    position: relative;
+    top: -9em;
+    width: 90%;
+    border-radius: 20px;
     margin-bottom: 1.5em;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
+  }
+  .top {
+    display: none;
+  }
 }
 
-.img_footer{
-    margin: 1em;
+@media (max-width: 480px) {
+  .img_pc {
+    display: none;
+  }
+
+  .experience_container {
+    border-radius: 20px;
+    border: solid 1px #ccc;
+    position: relative;
+    background-color: #fff;
+    top: -10em;
+    width: 94vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience_content {
+    padding: 2em;
+    border-bottom: solid 1px #ccc;
+    border-right: none;
+  }
+
+  .p_description {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    margin: auto;
+    width: 80%;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 16em;
+  }
+
+  .container_proyects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .proyect a img {
+    position: relative;
+    top: -9em;
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 1.5em;
+  }
+  .top {
+    display: none;
+  }
+
+  .button_header {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon_portfolio {
     width: 4em;
-    filter: invert();
-    
-}
+    margin: 3em 0 0 0;
+  }
 
-.p_copy{
-    font-family: cursive;
-    color: #fff;
-    margin-bottom: 0.6em;
-}
+  .h1_myContent {
+    font-size: 2em;
+  }
 
-.img_footer:hover{
-    transition: filter 0.2s;
-    filter: invert(0%);
-    
-}
+  .h2_myContent {
+    padding: 0 0.2em;
+    font-size: 1.3em;
+  }
+  .h3_proyects {
+    font-size: 1em;
+    width: 80%;
+  }
+  .footer {
+    position: absolute;
+    bottom: -11em;
+    text-align: center;
+  }
 
-@media (min-width: 576px) and (max-width: 1024px){
-    .img_pc{
-        display: none;
-    }
+  .h2_footer {
+    font-size: 1.2em;
+  }
 
-    .experience_container{
-        border-radius: 20px;
-        border: solid 1px #ccc;
-        position: relative;
-        background-color: #fff;
-        top:-10em ;
-        width: 94vw;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .experience_content{
-        padding: 2em;
-         border-bottom: solid 1px #ccc;
-      }
-
-    .p_description{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: auto;
-        width: 80%;
-        font-size: 1em;
-        font-weight: bold;
-        margin-bottom: 16em;
-    }
-
-    .container_proyects{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .proyect a img{
-        position: relative;
-        top: -9em;
-        width: 90%;
-        border-radius: 20px;
-        margin-bottom: 1.5em;
-    }
-
-}
-
-@media (min-width: 480px) and (max-width: 576px){
-
-    .img_pc{
-        display: none;
-    }
-
-    .experience_container{
-        border-radius: 20px;
-        border: solid 1px #ccc;
-        position: relative;
-        background-color: #fff;
-        top:-10em ;
-        width: 94vw;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .experience_content{
-        padding: 2em;
-         border-bottom: solid 1px #ccc;
-      }
-
-    .p_description{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: auto;
-        width: 80%;
-        font-size: 1em;
-        font-weight: bold;
-        margin-bottom: 16em;
-    }
-
-    .container_proyects{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .proyect a img{
-        position: relative;
-        top: -9em;
-        width: 90%;
-        border-radius: 20px;
-        margin-bottom: 1.5em;
-    }
-    .top{
-        display: none;
-    }
-}
-
-@media (max-width: 480px){
-    .img_pc{
-        display: none;
-    }
-
-    .experience_container{
-        border-radius: 20px;
-        border: solid 1px #ccc;
-        position: relative;
-        background-color: #fff;
-        top:-10em ;
-        width: 94vw;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .experience_content{
-         padding: 2em;
-         border-bottom: solid 1px #ccc;
-      }
-
-    .p_description{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: auto;
-        width: 80%;
-        font-size: 1em;
-        font-weight: bold;
-        margin-bottom: 16em;
-    }
-
-    .container_proyects{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .proyect a img{
-        position: relative;
-        top: -9em;
-        width: 90%;
-        border-radius: 20px;
-        margin-bottom: 1.5em;
-    }
-    .top{
-        display: none;
-    }
-
-    .button_header{
-        display: none;
-    }
-    .header{
-        display: flex;
-        justify-content: center;
-    }
-
-    .icon_portfolio{
-        width: 4em;
-        margin: 3em 0 0 0;
-    }
-
-    .h1_myContent{
-        font-size: 2em;
-    }
-
-    .h2_myContent{
-        padding: 0 .2em;
-        font-size: 1.3em;
-        
-    }
-    .h3_proyects{
-        font-size: 1em;
-        width: 80%;
-    }
-    .footer{
-        position: absolute;
-        bottom: -11em;
-        text-align: center;
-    }
-
-    .h2_footer{
-        font-size: 1.2em;
-    }
-
-    .img_footer{
+  .img_footer {
     width: 3em;
-    }
-
+  }
 }
